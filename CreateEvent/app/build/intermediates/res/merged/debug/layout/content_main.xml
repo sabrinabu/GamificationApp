@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sabrina.createevent.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Event Lists"
+        android:id="@+id/listViewId"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageButtonCreateEvent"
+        android:src="@drawable/createevent"
+        android:scaleType="fitCenter"
+        android:onClick="callCreateEventMethod"
+        android:background="#0fffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/listViewId"
+        android:layout_toEndOf="@+id/listViewId"
+        android:layout_marginLeft="73dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginBottom="53dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventListView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/listViewId"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/imageButtonCreateEvent" />
+
+
+</RelativeLayout>

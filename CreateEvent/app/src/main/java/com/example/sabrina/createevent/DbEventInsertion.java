@@ -27,7 +27,7 @@ public class DbEventInsertion extends AsyncTask<String,Void,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        String insert_url = "http://192.168.56.1/www/insert.php/";
+        String insert_url = "http://nishadesai.16mb.com/insert.php";
         String method=params[0];
         if(method.equals("CreateEvent")) {
             String eventName = params[1];

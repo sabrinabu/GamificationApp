@@ -26,9 +26,6 @@ import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
 
-    String[] arrayList = {"hello1", "hell02", "hello3", "hello4", "hello5", "hello6", "hello7"};
-    ListView listView;
-    ArrayAdapter<String> adapter;
     private GoogleApiClient client;
 
     @Override
@@ -47,35 +44,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         client = new GoogleApiClient.Builder(MainActivity.this).addApi(AppIndex.API).build();
-
-
-        DbEventRetrieve retrievedb = new DbEventRetrieve(MainActivity.this);
-        retrievedb.execute();
-        List<EventInfo> eventInfos = retrievedb.EventInfosList();
-        // we need to slow down here. Data coming from the the database
-        // but a bit late that's why it shows initial data
-        // or we need to do refresh to the list after loading it
-        for (int i = 0; i < eventInfos.size(); i++) {
-            arrayList[i] = eventInfos.get(i).getName();
-        }
-
-        listView = (ListView) findViewById(R.id.eventListView);
-        adapter = new ArrayAdapter<String>(MainActivity.this, R.layout.single_row_listview, R.id.single_row_textView, arrayList);
-        listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position) + " is selected", Toast.LENGTH_LONG).show();
-            }
-        });
-        listView.invalidateViews();
-
         getActionBar();
 
+        DbEventRetrieve retrieveDb = new DbEventRetrieve(this);
+        retrieveDb.execute();
     }
 
-    public void callCreateEventMethod(View view) {
-        Intent page = new Intent(MainActivity.this, CreateEvent.class);
+    public void showEventListPage(View view){
+        Intent page = new Intent(MainActivity.this, ShowEvent.class);
         startActivity(page);
     }
 
@@ -91,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 

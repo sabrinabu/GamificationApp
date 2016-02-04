@@ -1,18 +1,9 @@
 package com.example.sabrina.createevent;
 
-import android.app.Activity;
 import android.content.Context;
-import android.net.Uri;
 import android.os.AsyncTask;
-import android.os.Bundle;
-import android.os.StrictMode;
 import android.util.Log;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -26,7 +17,6 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
-import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,7 +25,7 @@ import java.util.List;
  */
 public class DbEventRetrieve extends AsyncTask<String,Void,String> {
 
-    List<EventInfo> eventInfos = new ArrayList<EventInfo>();
+    static List<EventInfo> eventInfos = new ArrayList<EventInfo>();
     Context ctx;
     DbEventRetrieve(Context ctx)
     {
@@ -44,9 +34,10 @@ public class DbEventRetrieve extends AsyncTask<String,Void,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        String retrieve_url = "http://192.168.56.1/www/reteive.php/";
+        eventInfos.clear();
+        String retrieve_url = "http://nishadesai.16mb.com/reteive.php";
         String result = "";
-        InputStream isr = null;
+        InputStream inputStream = null;
         try {
             URL url = new URL(retrieve_url);
             HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
@@ -55,26 +46,28 @@ public class DbEventRetrieve extends AsyncTask<String,Void,String> {
             httpURLConnection.setDoInput(true);
             OutputStream outputStream = httpURLConnection.getOutputStream();
             BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
-            String data = URLEncoder.encode("sabrina","UTF-8")+"="+URLEncoder.encode("sabrina","UTF-8")+"&"+
-                    URLEncoder.encode("kaynat","UTF-8")+"="+ URLEncoder.encode("kaynat", "UTF-8");
+            String data = URLEncoder.encode("u640683613_nisha","UTF-8")+"="+URLEncoder.encode("u640683613_nisha","UTF-8")+"&"+
+                    URLEncoder.encode("sunny6121986","UTF-8")+"="+ URLEncoder.encode("sunny6121986", "UTF-8");
             bufferedWriter.write(data);
             bufferedWriter.flush();
+            
             bufferedWriter.close();
             outputStream.close();
-            isr = httpURLConnection.getInputStream();
+            inputStream = httpURLConnection.getInputStream();
         } catch (Exception e) {
             Log.e("log_tag", "Error in http connection " + e.toString());
         }
+
         //convert response to string
         try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(isr, "iso-8859-1"), 8);
-            StringBuilder sb = new StringBuilder();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"), 8);
+            StringBuilder stringBuilder = new StringBuilder();
             String line = null;
             while ((line = reader.readLine()) != null) {
-                sb.append(line + "\n");
+                stringBuilder.append(line + "\n");
             }
-            isr.close();
-            result = sb.toString();
+            inputStream.close();
+            result = stringBuilder.toString();
         } catch (Exception e) {
             Log.e("log_tag", "Error converting result " + e.toString());
         }

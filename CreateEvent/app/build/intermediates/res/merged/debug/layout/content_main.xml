@@ -12,41 +12,14 @@
     tools:context="com.example.sabrina.createevent.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Event Lists"
-        android:id="@+id/listViewId"
+        android:text="Show Events"
+        android:id="@+id/showEvents"
+        android:onClick="showEventListPage"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-
-    <ImageButton
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/imageButtonCreateEvent"
-        android:src="@drawable/createevent"
-        android:scaleType="fitCenter"
-        android:onClick="callCreateEventMethod"
-        android:background="#0fffffff"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/listViewId"
-        android:layout_toEndOf="@+id/listViewId"
-        android:layout_marginLeft="73dp"
-        android:layout_marginStart="73dp"
-        android:layout_marginBottom="53dp" />
-
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/eventListView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/listViewId"
-        android:layout_marginTop="10dp"
-        android:layout_above="@+id/imageButtonCreateEvent" />
-
-
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="133dp" />
 </RelativeLayout>

@@ -44,7 +44,7 @@
         android:ems="10"
         android:id="@+id/editTextDate"
         android:layout_marginTop="75dp"
-        android:hint="Friday, Jan 27 2016"
+        android:hint="2016:02:10"
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -60,7 +60,7 @@
         android:layout_toRightOf="@+id/editTextDate"
         android:layout_toEndOf="@+id/editTextDate"
         android:layout_marginLeft="10dp"
-        android:hint="4:30 pm" />
+        android:hint="04:30" />
 
     <EditText
         android:layout_width="wrap_content"

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Eventname"
+        android:id="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextEventName"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="9dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Category"
+        android:id="@+id/textView"
+        android:layout_below="@+id/editTextEventName"
+        android:layout_alignLeft="@+id/editTextEventName"
+        android:layout_alignStart="@+id/editTextEventName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp" />
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/editTextDate"
+        android:layout_marginTop="75dp"
+        android:hint="2016:02:10"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="60dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/editTextTime"
+        android:layout_alignTop="@+id/editTextDate"
+        android:layout_toRightOf="@+id/editTextDate"
+        android:layout_toEndOf="@+id/editTextDate"
+        android:layout_marginLeft="10dp"
+        android:hint="04:30" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextLocation"
+        android:layout_below="@+id/editTextDate"
+        android:layout_alignLeft="@+id/editTextDate"
+        android:layout_alignStart="@+id/editTextDate"
+        android:layout_alignRight="@+id/editTextTime"
+        android:layout_alignEnd="@+id/editTextTime"
+        android:layout_marginTop="10dp"
+        android:hint="Location" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editTextDescription"
+        android:hint="Description"
+        android:layout_below="@+id/editTextLocation"
+        android:layout_alignLeft="@+id/editTextLocation"
+        android:layout_alignStart="@+id/editTextLocation"
+        android:layout_marginTop="30dp"
+        android:layout_alignRight="@+id/editTextLocation"
+        android:layout_alignEnd="@+id/editTextLocation" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/time_icon"
+        android:scaleType="centerInside"
+        android:id="@+id/imageButton"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:background="#0fffffff"
+        android:layout_above="@+id/editTextLocation" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/location_icon"
+        android:scaleType="centerInside"
+        android:background="#0fffffff"
+        android:id="@+id/imageButton2"
+        android:layout_above="@+id/editTextDescription"
+        android:layout_alignLeft="@+id/imageButton"
+        android:layout_alignStart="@+id/imageButton" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/text_icon"
+        android:scaleType="centerInside"
+        android:background="#0fffffff"
+        android:id="@+id/imageButton3"
+        android:layout_alignBottom="@+id/editTextDescription"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/time_icon"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageButton4"
+        android:layout_below="@+id/textView"
+        android:layout_toLeftOf="@+id/imageButton5"
+        android:layout_toStartOf="@+id/imageButton5" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/time_icon"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageButton5"
+        android:layout_alignTop="@+id/imageButton4"
+        android:layout_alignLeft="@+id/editTextDate"
+        android:layout_alignStart="@+id/editTextDate"
+        android:layout_marginLeft="8dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/time_icon"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageButton6"
+        android:layout_alignTop="@+id/imageButton5"
+        android:layout_toRightOf="@+id/imageButton5"
+        android:layout_toEndOf="@+id/imageButton5"
+        android:layout_marginLeft="8dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/time_icon"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageButton7"
+        android:layout_alignTop="@+id/imageButton6"
+        android:layout_toRightOf="@+id/imageButton6"
+        android:layout_toEndOf="@+id/imageButton6"
+        android:layout_marginLeft="8dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/time_icon"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageButton8"
+        android:layout_alignTop="@+id/imageButton7"
+        android:layout_toRightOf="@+id/imageButton7"
+        android:layout_toEndOf="@+id/imageButton7"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Event"
+        android:onClick="createEventMethod"
+        android:id="@+id/buttonSaveEvent"
+        android:layout_below="@+id/imageButton3"
+        android:layout_toLeftOf="@+id/editTextTime"
+        android:layout_toStartOf="@+id/editTextTime"
+        android:layout_marginTop="65dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/time_icon"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageButton9"
+        android:layout_alignTop="@+id/imageButton8"
+        android:layout_toRightOf="@+id/imageButton8"
+        android:layout_toEndOf="@+id/imageButton8"
+        android:layout_marginLeft="8dp" />
+</RelativeLayout>

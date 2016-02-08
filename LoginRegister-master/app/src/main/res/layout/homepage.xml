@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomePage"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Event Lists"
+        android:id="@+id/textViewId"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="358dp"
+        android:id="@+id/eventListView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewId"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/imageButtonCreateEvent" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageButtonCreateEvent"
+        android:src="@drawable/createevent"
+        android:scaleType="fitCenter"
+        android:onClick="callCreateEventMethod"
+        android:background="#0fffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textViewId"
+        android:layout_toEndOf="@+id/textViewId"
+        android:layout_marginLeft="73dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="right" />
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:background="@drawable/picturebg">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.46"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Back"
+                android:id="@+id/back"
+                android:onClick="onClick"
+                android:layout_weight="0.23"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Save"
+                android:id="@+id/save"
+                android:onClick="onClick"
+                android:gravity="right"
+                android:layout_weight="0.23"
+                android:textColor="#ffffff"/></LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.04"
+                    > <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.016"
+
+                    ></LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.009"
+
+                        >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/relativeLayout"
+                        android:layout_below="@id/text1"
+                        android:layout_marginTop="00dp"
+                        android:layout_gravity="center">
+
+                        <Button
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/editphoto"
+                            android:id="@+id/bTakePic"
+                            android:layout_marginLeft="140dp"
+                            android:onClick="loadPic"
+                            android:layout_marginTop="80dp" />
+
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:id="@+id/imgPic"
+                            android:src="@drawable/iconusercircle"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp" />
+                    </RelativeLayout></LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.016"
+
+                        ></LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>on
+
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Language skills"
+                android:layout_weight="0.03"
+                android:id="@+id/textlangskill" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="language select"
+                android:layout_weight="0.10"
+                android:onClick="onClick"
+                android:id="@+id/langskill" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_weight="0.03"
+                android:text="Language I want to learn"
+                android:id="@+id/textlangwant" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_weight="0.10"
+                android:text="langauge select"
+                android:onClick="onClick"
+                android:id="@+id/langwant" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_weight="0.03"
+                android:text="Interests"
+                android:id="@+id/textinterests" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_weight="0.10"
+                android:text="Acticity select"
+                android:id="@+id/interests" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

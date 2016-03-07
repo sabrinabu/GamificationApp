@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <!-- Event Name -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Eventname"
+                android:id="@+id/textView2"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextEventName"
+                android:layout_below="@+id/textView2"
+                android:hint="Soccer Match"
+                android:textStyle="bold"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <!-- Categories -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_weight="0.20"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Category"
+                android:id="@+id/categoryText" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/category1"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:background="@drawable/selectcinema"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/category2"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:background="@drawable/selectculture"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/category3"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:background="@drawable/selecteducation"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/category4"
+                    android:layout_row="0"
+                    android:layout_column="3"
+                    android:background="@drawable/selectexcursion"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/category5"
+                    android:layout_row="0"
+                    android:layout_column="4"
+                    android:background="@drawable/selectfood"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/category6"
+                    android:layout_row="0"
+                    android:layout_column="5"
+                    android:background="@drawable/selectgames"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/category7"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:background="@drawable/selecthelp"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/category8"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:background="@drawable/selectlanguagepractice"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/category9"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:background="@drawable/selectmusic"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/category10"
+                    android:layout_row="1"
+                    android:layout_column="3"
+                    android:background="@drawable/selectunspecified"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/category11"
+                    android:layout_row="1"
+                    android:layout_column="4"
+                    android:background="@drawable/selectsports"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/category12"
+                    android:layout_row="1"
+                    android:layout_column="5"
+                    android:background="@drawable/selecttimeout"/>
+
+            </GridLayout>
+        </LinearLayout>
+
+
+        <!-- Date & location-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:layout_gravity="center"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_gravity="center">
+
+                <!-- Date -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView"
+                        android:background="@drawable/datetimeicon"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="time"
+                        android:id="@+id/editTextDate"
+                        android:hint="Friday, Jan 22 2016"
+                        android:layout_weight="0.4"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="time"
+                        android:id="@+id/editTextTime"
+                        android:hint="04:30"
+                        android:layout_weight="0.5"/>
+                </LinearLayout>
+
+
+                <!-- Location -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_weight="0.8">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/locationImage"
+                        android:background="@drawable/location"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editTextLocation"
+                        android:hint="Location"
+                        android:layout_weight="0.97"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Separator -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:background="#f1f1f1"></LinearLayout>
+
+        <!-- Description -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:layout_gravity="center"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/descripImage"
+                android:background="@drawable/description"/>
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/editTextDescription"
+                android:hint="Description"
+                android:layout_weight="0.9"/>
+        </LinearLayout>
+
+        <!-- Separator -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:background="#f1f1f1">
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Event"
+            android:onClick="createEventMethod"
+            android:id="@+id/buttonSaveEvent"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

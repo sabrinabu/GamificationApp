@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2a7e47da654546f9457deb6132364f1bf33a1857">
+        <dex dex="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-maps-8.1.0_542b8ce659bfe6d04790209e8a461e57a525c01f.jar" />
+    </item>
+    <item
+        jar="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\exploded-aar\org.lucasr.twowayview\twowayview\0.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f4c3a1a784563dd6f014ddf8e3a173cf3f152dd8">
+        <dex dex="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\pre-dexed\release\org.lucasr.twowayview-twowayview-0.1.1_c5f37cb676f0c6c8c070bfc383bf8a3a4f5f5e82.jar" />
+    </item>
+    <item
+        jar="C:\Users\sabrina\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\pre-dexed\release\support-annotations-22.2.0_17cad804bd91be11bd7c3d160188d421f9ee2ec6.jar" />
+    </item>
+    <item
+        jar="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0f254ec13d6671680482d2218f01ecf14dfa93e6">
+        <dex dex="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\pre-dexed\release\com.facebook.android-facebook-android-sdk-4.0.0_ae516dce3d7ce76df30b7b4179c1116e57c3aa6c.jar" />
+    </item>
+    <item
+        jar="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-appindexing-8.1.0_3b4e8e75e899263cbcbb4c25404231456df40123.jar" />
+    </item>
+    <item
+        jar="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-basement-8.1.0_e185a20f7629420c94bacbab5ad5b3c9bc812bab.jar" />
+    </item>
+    <item
+        jar="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\pre-dexed\release\internal_impl-22.2.0_5eeedba23b4d5edeeff03cad0d0eb3cc0962a088.jar" />
+    </item>
+    <item
+        jar="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
+        <dex dex="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-base-8.1.0_b2795300006723f201997bf677db77d58a7e1c7b.jar" />
+    </item>
+    <item
+        jar="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-21.0.3_722e01bf35baa41080e14d9c011682fb26e9fb5f.jar" />
+    </item>
+    <item
+        jar="C:\Users\sabrina\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.4\129874135e6081269ace2312092031558865de12\bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\pre-dexed\release\bolts-android-1.1.4_f99d0c94cd34c314bc97b425414a5f07a7eec5b8.jar" />
+    </item>
+    <item
+        jar="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="E:\GithhubMasterProDev\Updated\Moin-master\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-22.2.0_0ae33af236eed650ec170e8b9323a5e94cd17f34.jar" />
+    </item>
+
+</items>

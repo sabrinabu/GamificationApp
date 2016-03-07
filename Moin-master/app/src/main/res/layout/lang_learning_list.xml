@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="50">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="44"
+        android:background="#212121"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7.7"
+
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgengff"
+                android:src="@drawable/back"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                /></LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Event Name"
+            android:id="@+id/eventName"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:textColor="#ffffff"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:layout_weight="1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:isScrollContainer="true">
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|left"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icinema"
+                android:layout_gravity="center"
+                android:src="@drawable/cinema"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Cinema"
+                android:id="@+id/textView7cc"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|left"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iculture"
+                android:layout_gravity="center"
+                android:src="@drawable/culture"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Culture"
+                android:id="@+id/textView7c"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|left"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ieducation"
+                android:layout_gravity="center"
+                android:src="@drawable/education"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Education"
+                android:id="@+id/textViewc7"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|left"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iexcursion"
+                android:layout_gravity="center"
+                android:src="@drawable/excursion"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Excursion"
+                android:id="@+id/textView7xc"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|left"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ifood"
+                android:layout_gravity="center"
+                android:src="@drawable/food"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Food"
+                android:id="@+id/textView7"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|left"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/igames"
+                android:layout_gravity="center"
+                android:src="@drawable/games"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Games"
+                android:id="@+id/textViewc7c"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|left"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ihelp"
+                android:layout_gravity="center"
+                android:src="@drawable/help"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Help"
+                android:id="@+id/textViewd7"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|left"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ilanguagepractice"
+                android:layout_gravity="center"
+                android:src="@drawable/languagepractice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Langugage practice"
+                android:id="@+id/textViewd7c"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|left"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imusic"
+                android:layout_gravity="center"
+                android:src="@drawable/music"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Music"
+                android:id="@+id/textView7dre"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|left"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isports"
+                android:layout_gravity="center"
+                android:src="@drawable/sport"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Sports"
+                android:id="@+id/textViewdvds7c"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|left"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itimeout"
+                android:layout_gravity="center"
+                android:src="@drawable/timeout"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Time out"
+                android:id="@+id/textView7gf"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|left"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/inotspecified"
+                android:layout_gravity="center"
+                android:src="@drawable/notspecified"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Not specified"
+                android:id="@+id/textView7cdf"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+
+    </TableRow>
+
+
+
+
+
+    </TableLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
